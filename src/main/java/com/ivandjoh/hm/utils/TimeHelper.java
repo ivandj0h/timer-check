@@ -22,10 +22,9 @@ public class TimeHelper {
 
         HomeData homeData = new HomeData();
         homeData.setStartWork("10:00");
-        homeData.setEndWork("16:00");
+        homeData.setEndWork("18:00");
         homeData.setTimeNow(parts[0]);
         homeData.setMinutesNow(parts[1]);
-
         homeData.setCheckOut(dtt.compareTo(homeData.getEndWork()) > 0);
 
         ArrayList<HomeData> homeDataList = new ArrayList<>();
